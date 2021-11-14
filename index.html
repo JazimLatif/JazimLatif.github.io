@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FrontEnd Sports</title>
+    <!-- Linking in the CSS styling file: -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Source used for the basket icon: -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CODING_TASK_1: Insert the HTML elements you would like to be in your pages header -->
+    <header class="header">
+
+        <a href="#" class="header__title"><strong>FrontEnd Sports</strong></a>
+
+        <!-- CODING_TASK_3: Create a navbar for your page. The nav bar does not need to take you to different pages.  -->
+        <nav class="navbar">
+            <img src="../images/logo2.png">
+            <a href="#Home">&#127968; Home</a>
+            <a href="#Shop">🛍️Shop</a>
+            <a href="#About">🤔About</a>
+            <a href="#Contact">📞Contact Us</a>
+            <a>🛒Basket(0)</a>
+        </nav>
+
+        <section class = "home" id="Home">
+            <form action="sign in">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <label for="username">Password</label>
+                <input type="text" name="password" id="password" placeholder="Password">
+                <button class="home-button">Login</button>
+                <button class="home-button">Sign Up</button>
+               
+            </form>
+        </section>
+
+    </header>
+
+    <!-- Main content: List of items  -->
+    <main>
+
+        <section>
+            <div class="hero">
+                <img id="hero-image" src="../images/New-In.gif" alt="New-In">
+                <div class="hero-content">
+                    <h2> New Addidas RunX</h2>
+                    <p>Speed. Precision. Engineered. </p>
+                    <button id="hero-buy-now">BUY NOW</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CODING_TASK_5: Add the products for your page within the products div using the below example for inspiration. -->
+        <div class="wc">
+            <img class="Winter" src="../images/Winter Collection.jpg" alt="Winter Collection">
+                <h3>New Winter Collection
+                </h3>
+        </div>
+        <div class="products">
+            <!--An example product -->
+            <div class="product" id="Shop">
+                <img class="product__icon" src="../images/Picture1.jpg" alt="Product Image" />
+                <h4 class="product__title">North Face Puffer</h4>
+                <p class="product__description">North Face puffers have become a UK staple these last few years, from celebrities to yardies, everyone and their nan is repping them and for a good reason. Stay cozy. <br> <br> </p>
+                <p class="product__price">£105</p>
+                <!-- CODING_TASK_7: Create the add/remove item to/from basket buttons using the below code as inspiration, yours can say anything you want. -->
+                <button id="addProduct1ToBasket" class="product__add">Add to basket</button>
+                <button id="removeProduct1ToBasket" class="product__remove">Remove from basket</button>
+            </div>
+            <div class="product">
+                <img class="product__icon" src="../images/Picture2.jpg" alt="Product Image" />
+                <h4 class="product__title">Balenciaga Trenchcoat</h4>
+                <p class="product__description">If you don't have a long coat, what are you even doing? Get one now. Please. <br><br></p>
+                <p class="product__price">£150</p>
+                <!-- CODING_TASK_7: Create the add/remove item to/from basket buttons using the below code as inspiration, yours can say anything you want. -->
+                <button id="addProduct1ToBasket" class="product__add">Add to basket</button>
+                <button id="removeProduct1ToBasket" class="product__remove">Remove from basket</button>
+            </div>
+            <div class="product">
+                <img class="product__icon" src="../images/Picture3.jpg" alt="Product Image" />
+                <h4 class="product__title">Reebok Shell Jacket</h4>
+                <p class="product__description">This light, breathable waterproof is a MUST have this winter, forecasted to be one of the wettest, coldest in recent history; posisbly due to just 100 companies causing 71% of global emissions, but remember, keep using those paper straws guys!  </p>
+                <p class="product__price">£79</p>
+                <!-- CODING_TASK_7: Create the add/remove item to/from basket buttons using the below code as inspiration, yours can say anything you want. -->
+                <button id="addProduct1ToBasket" class="product__add">Add to basket</button>
+                <button id="removeProduct1ToBasket" class="product__remove">Remove from basket</button>
+                <!--Add removal button here. Hint: Look at the add button above and checkout the JS functionality in index.js. -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter Sign Up Form -->
+    <main class="newsletter">
+        <section id="contact-form" class="contact">
+            <div class="container">
+                <h2 class="contact-heading"><span class="text-primary">You Come First!</span></h2>
+                <p>Please let us know what you think!</p><br>
+                <form action="process.php">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="About-sec" id="About">
+            <h1>About Us</h1>
+            <img src="../images/storefront.jpg">
+            <p>
+                Established in the year 2021 by Jazim Latif, Joeeta Bagchi, Hajera Rahman, Yonis Abdulahi and Daniel
+                Quagraine, F.E. Sports has long been established as the leading UK specialist retailer of fashionable
+                branded, sports and casual wear. <br> <br>
+
+                What started as a single shop in East London has now expanded across the UK, and by late 2021, F.E. had
+                opened a total of 56 stores. By 2022, F.E. will dominate most of the EU, primarily in Germany, Ireland,
+                France, Netherlands and Spain, with Denmark and Sweden to follow suit. At this moment in time, F.E. is
+                already regarded as the most innovative visual merchandiser of sportswear with the best and most
+                exclusive stylish range. <br> <br>
+
+                Fast forward to early 2023, F.E. will officially launch its first store in Asia, in Malaysia. In November,
+                F.E. will open its first flagship store in Pavilion Elite, Kuala Lumpur, and its third store in Asia in
+                Sunway Velocity, Cheras. <br> <br>
+
+                F.E. looks forward to a progressive development in Asia, and the world in the days to come.
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- CODING_TASK_11: Add the HTML elements you would like to be displayed in your footer. -->
+        <div class="footer" id="Contact">
+                <ul>
+                    <a href="Info.html" target="_blank">Get in Touch, </a>
+                    <a href="Privacy.html" target="_blank">Privacy Policy, </a>
+                    <a href="Terms.html" target="_blank">Terms of Service</a>
+
+                </ul>
+                &copy; FrontEndSports.Ltd
+
+        </div>
+    </footer>
+
+    <!-- CODING_TASK_12: If you've made it this far, very well done to you and your group. This task is about having the freedom to get creative and try anything out that you would like to add to your page. Rembember to leave some time for you and your group to prepare for your presentations. -->
+
+    <!-- Import Javascript file -->
+    <script src="./index.js">
+
+    
+    
+    </script>
+
+</body>
+
+</html>

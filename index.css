@@ -1,0 +1,331 @@
+/* Boilerplate CSS provided */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: #fbfbfb;
+}
+/* Hero image content */
+.hero{
+  margin-top: 1em;
+  align-items: center;
+  margin:auto;
+  width:90%;
+  display: flex;
+}
+
+#hero-image{
+  width: 80%;
+  padding: 1em;
+  height: auto; 
+ }
+
+.hero-content{
+  margin-left: 4em;
+  width:30%;
+  text-align: center;
+}
+
+.hero-content h2{
+
+  font-size: 40px;
+}
+
+.hero-content p{
+
+margin-top: 20%;
+}
+
+#hero-buy-now{
+  margin-top: 20%;
+  width: 250px;
+  height: 60px;
+ background-color: purple;
+ color: white;
+cursor: pointer;
+border: none;
+}
+
+#hero-buy-now:hover{
+transform: scale(1.1);
+transition-delay: 0.1s ease-in;
+}
+
+
+.basket-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.basket-box p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+  color: black;
+}
+
+.basket-box ion-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color: 	black;
+}
+
+.basket-box button:hover {
+  cursor: pointer;
+}
+
+#checkout {
+  padding: 5px;
+  width: 100%;
+}
+/* CODING_TASK_2: header - add css rules to style the classes in your header (excluding the navbar) */
+.header {;
+         display: flex;
+        align-items: center;
+        background-color: black;
+        justify-content: center;
+        background-color: black;
+        margin-top:5.22%}
+
+.header__title{
+  font-family: Fjalla One, Georgia, 'Times New Roman', Times, serif;
+  font-size: 350%;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  padding: 1em;
+  text-shadow: 4px 4px purple;
+}
+
+.home{
+color: white;  
+}
+.home:hover{
+  
+  transform: scale(1.1);
+  transition-delay: 0.1s ease-in;
+    
+}
+.home-button:hover{
+  background-color: purple;
+}
+  
+
+/* CODING_TASK_4: navbar - add css rules to style the classes in your navbar until you are happy with how it looks. */
+.navbar {
+  z-index: 3;
+  align-items:center;
+  overflow: hidden;
+  padding: 0.1%;
+  background-color:black;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  padding: 0.1%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.navbar img{object-fit: contain;
+  width: 5%;
+}
+
+.navbar a{
+  
+  height: 40px;
+  border: 1px solid black;
+  border-radius:50px;
+  color: black;
+  padding: 0.5%;
+  background-color: white;
+  align-content: center;
+}
+
+.navbar a:hover {
+  transform: scale(1.5);
+  transition-delay: 0.1s ease-in;
+  background: purple;
+  color: white;
+}
+
+/* CODING_TASKS_6: image/product - add css rules to layout your products and add styling to them */
+
+.products {
+  margin: 2em auto;
+  display:grid;
+  gap: 3em;
+  grid-auto-flow: column;
+  width:90%;
+  text-align: center;
+
+}
+
+.product {
+line-height: 2;
+padding-top: 80px;
+}
+
+.product__icon {
+width:100%;
+}
+
+.product__title {
+
+}
+
+.product__description {
+
+}
+
+.product__price {
+font-size: larger;
+}
+
+/* CODING_TASKS_8: add/remove product buttons - add styling to your add/remove buttons */
+
+.product__add {
+width:100%;
+height: 50px;
+background-color: lightpurple;
+cursor: pointer;
+margin-bottom: 1em;
+
+}
+
+.product__add:hover{
+background-color: purple;
+color: white;
+border: none;
+
+}
+
+.product__remove {
+  width:100%;
+  height: 50px;
+  cursor: pointer;
+  background-color: lightpurple;
+  margin-bottom: 1em;
+}
+
+.product__remove:hover{
+  background-color: purple;
+  color: white;
+  border: none;
+  
+  }
+.footer {
+  
+}
+
+#Contact{
+  margin-bottom: 4%;
+  margin-left: 8%;
+  font-size: 1.5em;
+}
+.footer__link {
+
+}
+
+/* Newsletter Sign Up  */
+.newsletter {
+display: block;
+margin-left: 60px;
+margin-right: 60px;
+}
+
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px black solid;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+  outline: none;
+  border-color: purple;
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: grey;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: purple;
+  color: white;
+}
+
+.btn-light {
+  background: white;
+  color: grey;
+}
+
+
+.About-sec{
+  margin: 4em auto;
+  width:90%;
+}
+
+.About-sec h1{
+  margin-bottom: 2%;
+}
+
+.About-sec img{
+  width:100%;
+}
+
+.About-sec p{
+  margin-top: 1em;
+}
+
+.wc{
+  position: relative;
+  align-items: center;
+}
+.wc img{
+  width: 88%;
+ margin: auto;
+ margin-left: 6%;
+ margin-right: 6%;
+ padding-top: 80px;
+
+
+}
+.wc h3{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  bottom: 50%;
+  color: white;
+  z-index: 2;
+  font-size: 400%;
+  text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px purple;
+}
